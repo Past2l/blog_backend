@@ -29,6 +29,17 @@ export class GetUserDto {
   email: string;
 
   @ApiProperty({
+    description: 'Password',
+    example: '12345678',
+    required: false,
+    minimum: 8,
+    maximum: 32,
+  })
+  @IsOptional()
+  @IsString()
+  password: string;
+
+  @ApiProperty({
     description: 'Nickname',
     example: '파스텔톤연두색',
     required: true,
