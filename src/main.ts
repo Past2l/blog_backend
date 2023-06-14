@@ -20,7 +20,7 @@ async function bootstrap() {
   );
   const config = new DocumentBuilder()
     .setTitle('Dohyun.it Blog Backend API Document')
-    .setDescription('dohyun.it')
+    .setDescription('blog.dohyun.it')
     .setVersion('0.0.1')
     .addCookieAuth()
     .build();
