@@ -38,7 +38,7 @@ export class User {
   @CreateDateColumn()
   created: Date;
 
-  @ApiProperty({ description: 'Account Last Edited' })
+  @ApiProperty({ description: 'Account Last Updated' })
   @UpdateDateColumn()
   updated: Date;
 }
